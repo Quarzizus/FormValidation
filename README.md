@@ -1,2 +1,2 @@
 # FormValidation
-Form Validation with Reach and regular expresions
+Form Validation with React, regular expresions and styled components (CSS in JS)
