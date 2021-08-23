@@ -6,17 +6,16 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { InputS } from "../styles/components/InputS.js";
 
-const Input = () => {
+const Input = ({ name, placeholder, type, legend }) => {
   return (
     <InputS className="Container_input">
-      <label htmlFor="usuario">Usuario</label>
+      <label htmlFor={name}>{name}</label>
       <div className="Input_wrapper">
-        <input type="text" id="usuario" placeholder="Juanito" name="usuario" />
+        <input type={type} id={name} placeholder={placeholder} name={name} />
         <FontAwesomeIcon icon={faTimesCircle} className="Input_icon" />
       </div>
       <p>
-        Esta es la leyenda Lorem ipsum dolor sit amet consectetur adipisicing
-        elit.eaque o Inventore.
+        {legend}
       </p>
     </InputS>
   );

@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const InputS = styled.article`
   display: flex;
   flex-direction: column;
-  padding: 10px 50px;
+  padding: 10px 30px;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.1);
   label {
@@ -39,5 +39,8 @@ export const InputS = styled.article`
   p {
     font-size: 0.9rem;
     color: ${colors.error};
+  }
+  @media screen and (max-width: 800px) {
+    padding: 10px 20px;
   }
 `;
