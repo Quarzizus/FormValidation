@@ -11,12 +11,16 @@ const Input = ({ name, placeholder, type, legend }) => {
     <InputS className="Container_input">
       <label htmlFor={name}>{name}</label>
       <div className="Input_wrapper">
-        <input type={type} id={name} placeholder={placeholder} name={name} />
+        <input
+          autoComplete="off"
+          type={type}
+          id={name}
+          placeholder={placeholder}
+          name={name}
+        />
         <FontAwesomeIcon icon={faTimesCircle} className="Input_icon" />
       </div>
-      <p>
-        {legend}
-      </p>
+      <p>{legend}</p>
     </InputS>
   );
 };
