@@ -20,4 +20,4 @@ deploy:
   target-branch: gh-pages
   commit_message: "Deploy Release"
   on:
-    branch: gh-pages
+    branch: master
