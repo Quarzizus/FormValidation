@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../components/FormS.js";
+import { colors, font } from "../components/FormS.js";
 
 export const SubmitS = styled.section`
   grid-column: 1/3;
@@ -25,6 +25,8 @@ export const SubmitS = styled.section`
     height: 40px;
     border: none;
     color: white;
+    font-family: ${font};
+    font-weight: bold;
   }
   @media screen and (max-width: 800px) {
     & {

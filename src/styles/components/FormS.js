@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const colors = {
   border: "#0087f6",
-  success: "#190E4F",
+  success: "#0ad893",
   error: "#cf1d53",
 };
 export const font = `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,

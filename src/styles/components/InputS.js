@@ -24,16 +24,17 @@ export const InputS = styled.article`
       font-family: ${font};
     }
     input:focus {
-      /* border: 3px solid ${colors.border}; */
-      outline: 2px solid ${colors.border};
+      outline: 2px solid
+        ${(props) => (props.status ? colors.success : colors.error)};
     }
     input:focus + .Input_icon {
-      color: ${colors.border};
+      color: ${(props) => (props.status ? colors.success : colors.error)};
     }
     .Input_icon {
       position: absolute;
       right: 15px;
       top: calc(32px - 50%);
+      color: ${(props) => (props.status ? colors.success : colors.error)};
     }
   }
   p {

@@ -1,4 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./containers/App";
-ReactDOM.render(<App />, document.getElementById("root"));
+import StateContext from "./context/StateContext";
+ReactDOM.render(
+  <StateContext>
+    <App />
+  </StateContext>,
+  document.getElementById("root")
+);
