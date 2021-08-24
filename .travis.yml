@@ -10,7 +10,7 @@ git:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $validation-form
+  github-token: $VALIDATION_FORM
   commit_message: "Deploy Release"
   on:
     branch: gh-pages
