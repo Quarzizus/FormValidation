@@ -1,4 +1,6 @@
 language: node_js
+notifications:
+  email: false
 node_js:
   - "12"
 cache:
@@ -6,18 +8,19 @@ cache:
     - ~/.npm
 git:
   depth: 3
-script:
-  - npm install
-script:
-  - npm run build
-deploy:
-  provider: pages
-  edge: true
-  skip-cleanup: true
-  keep-history: true
-  github-token: $VALIDATION_FORM
-  local-dir: dist/
-  target-branch: gh-pages
-  commit_message: "Deploy Release"
-  on:
-    branch: master
+
+jobs:
+  script:
+    - npm install
+    - npm run build
+  deploy:
+    provider: pages
+    edge: true
+    skip-cleanup: true
+    keep-history: true
+    github-token: $VALIDATION_FORM
+    local-dir: dist/
+    target-branch: gh-pages
+    commit_message: "Deploy Release"
+    on:
+      branch: master
