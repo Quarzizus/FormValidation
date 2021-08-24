@@ -6,7 +6,6 @@
     "build": "vite build",
     "serve": "vite preview"
   },
-  "homepage": "https://quarzizus.github.io/FormValidation",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",

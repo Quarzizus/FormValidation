@@ -6,11 +6,18 @@ cache:
     - ~/.npm
 git:
   depth: 3
-
+script:
+  - npm install
+script:
+  - npm run build
 deploy:
   provider: pages
+  edge: true
   skip-cleanup: true
+  keep-history: true
   github-token: $VALIDATION_FORM
+  local-dir: dist/
+  target-branch: gh-pages
   commit_message: "Deploy Release"
   on:
     branch: gh-pages
