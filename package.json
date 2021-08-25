@@ -1,7 +1,7 @@
 {
   "name": "validationform",
   "version": "0.0.0",
-  "homepage": "https://quarzizus.github.io/FormValidation/",
+  "homepage": "https://quarzizus.github.io/FormValidation",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
